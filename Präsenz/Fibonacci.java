@@ -1,8 +1,7 @@
 public class Fibonacci {
 
-    public static int durchlaufe = 0;
-
     public static void main(String[] args){
+        int durchlaufe = 0;
         long startzeit = System.nanoTime();
 
         //Gewünschte Funktion auskommentieren (immer die erste die ist cooler)
