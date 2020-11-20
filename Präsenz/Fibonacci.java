@@ -4,18 +4,18 @@ public class Fibonacci {
 
     public static void main(String[] args){
         long startzeit = System.nanoTime();
-        
+
         //Gewünschte Funktion auskommentieren (immer die erste die ist cooler)
-        
+
         System.out.println(fibonacciIterativ(30));
         //System.out.println(fibonacci(30));
-        
-        System.out.println(durchlaufe);
-        System.out.println(System.nanoTime()-startzeit);
+
+        System.out.println("Iterations: " + durchlaufe);
+        System.out.println("Time in nanoseconds: " + new Long(System.nanoTime() -startzeit));
     }
 
-    /** die langsame blöde rekursionsfibonaccifunktion 
-     * 
+    /** die langsame blöde rekursionsfibonaccifunktion
+     *
      * @param n
      * @return n-te fibonacci zahl
      */
@@ -29,8 +29,8 @@ public class Fibonacci {
 
 
     /** Die coole schnelle iterativfibonaccifunktion
-     * 
-     * @param n 
+     *
+     * @param n
      * @return n-te fibonacci zahl
      */
     public static int fibonacciIterativ(int n){
