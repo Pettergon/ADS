@@ -1,10 +1,8 @@
-import java.util.Arrays;
-
 public class Search {
 
     public static void main(String[] args){
         int[] a = { 931046, 931051, 931193, 931431, 931434, 931560, 931579, 931602, 931717, 931984, 932056, 932089, 932127, 932219, 932303, 932444, 932559, 932714, 932747, 932788};
-        int searchedNumber = 931579;
+        int searchedNumber = 93159;
 
         System.out.println( "(Linear) Number was found at index: "+ linearSearch(a, searchedNumber));
         System.out.println( "(Binary) Number was found at index: "+ binarySearch(a, 0, a.length, searchedNumber));
@@ -24,7 +22,11 @@ public class Search {
         int mid = (left+right)/2;
         if(a[mid] == nr){
             return mid;
-        }else if(a[mid] < nr){
+        }
+        if(left == right){
+            return -1;
+        }
+        if(a[mid] < nr){
             return binarySearch(a, mid+1, right, nr);
         }else{
             return binarySearch(a, left, mid, nr);
