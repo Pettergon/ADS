@@ -3,7 +3,7 @@ public class Fibonacci {
     public static int durchlaufe = 0;
 
     public static void main(String[] args){
-        long startzeit = System.currentTimeMillis();
+        long startzeit = System.nanoTime();
         
         //Gewünschte Funktion auskommentieren (immer die erste die ist cooler)
         
@@ -11,7 +11,7 @@ public class Fibonacci {
         //System.out.println(fibonacci(30));
         
         System.out.println(durchlaufe);
-        System.out.println(System.currentTimeMillis()-startzeit);
+        System.out.println(System.nanoTime()-startzeit);
     }
 
     /** die langsame blöde rekursionsfibonaccifunktion 
