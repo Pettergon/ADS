@@ -5,7 +5,7 @@ public class Search {
         int searchedNumber = 93159;
 
         System.out.println( "(Linear) Number was found at index: "+ linearSearch(a, searchedNumber));
-        System.out.println( "(Binary) Number was found at index: "+ binarySearch(a, 0, a.length, searchedNumber));
+        System.out.println( "(Binary) Number was found at index: "+ binarySearch(a, 0, a.length - 1, searchedNumber));
 
     }
 
