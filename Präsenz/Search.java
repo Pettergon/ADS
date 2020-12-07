@@ -6,7 +6,7 @@ public class Search {
 
         System.out.println( "(Linear) Number was found at index: "+ linearSearch(a, searchedNumber));
         System.out.println( "(Binary recursive) Number was found at index: "+ binarySearch(a, 0, a.length-1, searchedNumber));
-        System.out.println( "(Binary iteratively) Number was found at index: "+ binarySearchIterative(a, searchedNumber));
+        System.out.println( "(Binary iterative) Number was found at index: "+ binarySearchIterative(a, searchedNumber));
 
     }
 
