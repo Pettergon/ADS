@@ -2,12 +2,12 @@ public class Search {
 
     public static void main(String[] args){
         int[] a = { 931046, 931051, 931193, 931431, 931434, 931560, 931579, 931602, 931717, 931984, 932056, 932089, 932127, 932219, 932303, 932444, 932559, 932714, 932747, 932788};
+        // change this number
         int searchedNumber = 9317717;
 
         System.out.println( "(Linear) Number was found at index: "+ linearSearch(a, searchedNumber));
         System.out.println( "(Binary recursive) Number was found at index: "+ binarySearch(a, 0, a.length-1, searchedNumber));
         System.out.println( "(Binary iterative) Number was found at index: "+ binarySearchIterative(a, searchedNumber));
-
     }
 
     public static int linearSearch(int[] a, int nr){
