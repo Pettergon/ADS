@@ -24,7 +24,6 @@ public class QuickSort {
         // set initial pivot point to the beginning of the current array
         int pivotIndex = left;
 
-        /** **/
         for(int i = left; i < right; i++){
 
             if(a[i] < pivotElement){
