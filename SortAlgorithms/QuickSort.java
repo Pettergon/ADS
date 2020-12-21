@@ -25,9 +25,9 @@ public class QuickSort {
         int pivotIndex = left;
 
         /** **/
-        for(int i = left; i <= right; i++){
+        for(int i = left; i < right; i++){
 
-            if(a[i] <= pivotElement){
+            if(a[i] < pivotElement){
 
                 // swaps element and pushes it to the left side of the final pivot index
                 int temp = a[i];
