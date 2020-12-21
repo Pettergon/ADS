@@ -2,7 +2,7 @@ package sortAlgorithms;
 
 public class QuickSortShort {
 
-    public static int[] shortQuickSort(int[] a, int left, int right){
+    public static int[] quickSort(int[] a, int left, int right){
 
         if(left < right) {
             int pivotElement = a[right];
@@ -17,8 +17,8 @@ public class QuickSortShort {
                     a[pivotIndex] = temp;
                 }
             }
-            shortQuickSort(a, left, pivotIndex - 1);
-            shortQuickSort(a, pivotIndex + 1, right);
+            quickSort(a, left, pivotIndex - 1);
+            quickSort(a, pivotIndex + 1, right);
         }
         return a;
     }
